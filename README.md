@@ -1,3 +1,71 @@
+ # para rodar o projeto completo com a conexao com o backEnd ja conectado ao banco de dados ( o DOCKER  deve esta rodando em seguida o backEnd e por fim o rodar o frontEnd).
+  # passos iniciais :
+yarn create react-app frontend_bancointer
+yarn  cd frontend_bancointer 
+yarn start ( para testar)
+ # excluir os files desnecessarios 
+ # instalar as primeiras dependencias locais do projeto 
+yarn add @testing-library/jest-dom @testing-library/react @testing-library/user-event @types/jest @types/node @types/react @types/react-dom @types/react-router-dom react react-icons react-dom react-router-dom react-scripts styled-components typescript web-vitals axios date-fns
+
+# instalar as depencias no modo de desenvolvimento:
+yarn add @types/react -D @types/react-dom -D @types/styled-components -D
+
+# iniciar o arquivo ts config  = yarn tsc --init
+COLOCAR ESSAS OPCOES :
+{
+  "compilerOptions": {
+    "target": "es5",
+    "lib": [
+      "dom",
+      "dom.iterable",
+      "esnext"
+    ],
+    "allowJs": true,
+    "skipLibCheck": true,
+    "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true,
+    "strict": true,
+    "forceConsistentCasingInFileNames": true,
+    "noFallthroughCasesInSwitch": true,
+    "module": "esnext",
+    "moduleResolution": "node",
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "noEmit": true,
+    "jsx": "react-jsx"
+  },
+  "include": [
+    "src"
+  ]
+}
+# criar o arquivo 
+.gitignore:
+
+# dependencies
+/node_modules
+/.pnp
+.pnp.js
+
+# testing
+/coverage
+
+# production
+/build
+
+# misc
+.DS_Store
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+
+# to be continue 
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
